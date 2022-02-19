@@ -4,12 +4,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .max-width {
     padding: 0px 80px;
     margin: auto;
 }
 
-/* navbar */
+/* ...................navbar.................. */
 .body {
     margin: 0px;
     padding: 0px;
@@ -17,8 +20,11 @@
 .navbar {
     position: fixed;
     width: 100%;
+    padding: 10px 0;
+    transition: all 0.3s ease;
 }
 .navbar.nav-bg {
+    padding: 0;
     background: rgb(33, 135, 231);
 }
 .navbar .max-width {
@@ -44,7 +50,7 @@
     color: crimson;
 }
 
-/* home */
+/* .................home.................. */
 .home {
     display: flex;
     background: url("images/laptop.webp") no-repeat center;
@@ -67,4 +73,43 @@
 }
 .home .intro span {
     color: aqua;
+}
+
+/* ...............about................ */
+.about .text-about {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding: 35px auto 40px auto;
+    margin: 35px auto 40px auto;
+}
+.about .about-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-content .left {
+    width: 40%;
+}
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.about .about-content .right {
+    width: 60%;
+}
+.about .about-content .right .text-1 {
+    font-size: 24px;
+    margin: 12px auto;
+}
+.about .about-content .right .text-1 span {
+    color: aqua;
+    font-size: 28px;
+}
+.about .about-content .right .text-2 {
+    font-size: 20px;
 }
